@@ -1,30 +1,65 @@
+/* Basic page styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #f4f4f9;
 }
 
-header, footer {
-  background-color: #333;
-  color: #fff;
+header .hero {
+  background-color: #4caf50;
+  color: white;
+  padding: 50px 20px;
   text-align: center;
-  padding: 10px 0;
 }
 
-header h1, footer p {
-  margin: 0;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #333;
 }
 
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section styling */
 section {
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 h2 {
+  text-align: center;
   color: #333;
 }
 
+/* Profile image */
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Skills section */
 .skills-container {
   display: flex;
   justify-content: space-around;
@@ -62,9 +97,28 @@ h2 {
 }
 
 .react-bar .progress-bar-fill {
-  background-color: #61dafb; /* React blue color */
+  background-color: #61dafb;
 }
 
 .angular-bar .progress-bar-fill {
-  background-color: #dd0031; /* Angular red color */
+  background-color: #dd0031;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.linkedin-logo {
+  width: 30px; /* Adjust the size */
+  height: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.linkedin-logo:hover {
+  opacity: 0.8; /* Optional hover effect */
 }

@@ -3,46 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bio - ITMD 441/541</title>
+    <title>Welcome to My Web Development Journey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio website</h1>
-        <p>This is a project for ITMD 541.</p>
+        <div class="hero">
+            <h1>Welcome to My Web Development Journey</h1>
+            <p>This is the landing page for my ITMD 541 project.</p>
+        </div>
     </header>
 
-    <section>
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#course-info">Course Information</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-me">
         <h2>About Me</h2>
-        <p>I am Ramya. I am a student in ITMD 541. I have some experience with web development, including HTML, CSS and JavaScript.</p>
+        <img src="C:\Users\ramya\Downloads\my pic.jpg" alt="Your Image" class="profile-img">
+        <p>Hello! My name is Ramya. I am currently a student in ITMD 541, where I am learning advanced web development techniques. I have some prior experience with HTML, CSS, and JavaScript, which has helped me build this website.</p>
+        <p>Web development excites me because it combines creativity and technical skills to bring ideas to life on the internet. Over the years, I've worked on personal projects, contributed to team efforts, and continue to learn the latest technologies to improve my skill set.</p>
     </section>
 
-    <section>
-      <h2>My Learning Levels in React and Angular</h2>
-      <div class="skills-container">
-          <!-- React Skill -->
-          <div class="skill">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
-              <h3>React</h3>
-              <div class="progress-bar react-bar">
-                  <div class="progress-bar-fill" style="--progress: 75%;">75%</div>
-              </div>
-          </div>
+    <section id="course-info">
+        <h2>About ITMD 541</h2>
+        <p>ITMD 541 is an advanced web development course that explores various aspects of front-end and back-end development. We dive into:</p>
+        <ul>
+            <li>HTML5 and CSS3</li>
+            <li>Responsive Web Design</li>
+            <li>JavaScript </li>
+            <li>Web APIs and AJAX</li>
+            <li>Modern frameworks like React and Angular</li>
+        </ul>
+    </section>
 
-          <!-- Angular Skill -->
-          <div class="skill">
-              <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo">
-              <h3>Angular</h3>
-              <div class="progress-bar angular-bar">
-                  <div class="progress-bar-fill" style="--progress: 60%;">60%</div>
-              </div>
-          </div>
-      </div>
-  </section>
-   
+    <section id="skills">
+        <h2>Skills and Learning Levels</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                <h3>React</h3>
+                <div class="progress-bar react-bar">
+                    <div class="progress-bar-fill" style="--progress: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo">
+                <h3>Angular</h3>
+                <div class="progress-bar angular-bar">
+                    <div class="progress-bar-fill" style="--progress: 60%;">60%</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2024 Ramya. All rights reserved.</p>
-    </footer>
+      <p>Connect with me on 
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="linkedin-logo">
+          </a>
+      </p>
+      <p>© 2024 Ramya. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
